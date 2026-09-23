@@ -10,38 +10,163 @@
 
 /* Design Page ================== */
 
-h1{
+
+/* SECTION 1 ===================== */
+
+.hero {
+  min-height: 100vh;
+  min-height: 100svh;
+
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+
+}
+
+.hero-title-wrap {
+  width: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+.hero-kicker {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+
+    position: absolute;
+bottom: 85%;
+  
+}
+
+
+h1 {
     font-family: 'Manrope', sans-serif;
     letter-spacing: -0.105em;
     font-weight: 700;
-    font-size: 240px;
+    font-size: 265px;
 
 }
 
-p{
-    font-family: 'DM Mono', monospace;
-    letter-spacing: 0.14em;
-    font-size: 10px;
 
+.hero-note {
+  position: absolute;
+  right: 3.5%;
+  bottom: 2%;
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
 }
 
-.typo2{
+
+/* SECTION 2 ===================== */
+
+h2 {
     font-family: 'Manrope', sans-serif;
-    letter-spacing: -0.05em;
-    font-weight: 500;
-    font-size: 16px;
+    letter-spacing: -0.105em;
+    font-weight: 700;
+    font-size: 30px;
 
 }
 
-
-#section1{
-display: flex;
+.cardidk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.card1{
-display: flex;
-
-
-    
+.journey {
+  height: 200vh;
+  background-color: #222722;
 }
+
+.journey-sticky {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.image-grid {
+  position: relative;
+  height: 100%;
+  padding: 6vh 6vw;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-rows: repeat(2, auto);
+  align-content: center;
+  align-items: center;
+  gap: 5vh 1.5vw;
+}
+
+.path-stage {
+  position: relative;
+  height: 100%;
+  padding: 6vh 6vw;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-rows: repeat(2, auto);
+  align-content: center;
+  align-items: center;
+  gap: 5vh 1.5vw;
+}
+
+.route {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  z-index: 0;
+}
+
+.route path {
+  fill: none;
+  stroke: #f3efe733;
+  stroke-width: 1.1;
+  stroke-dasharray: 3 9;
+}
+
+.travel-card {
+  display: block;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  filter: saturate(.84);
+  will-change: transform;
+  z-index: 1;
+}
+
+.card-one {
+  grid-column: 1 / 3;
+}
+
+.card-two {
+  grid-column: 3 / 5;
+}
+
+.card-three {
+  grid-column: 5 / 7;
+}
+
+.card-four {
+  grid-column: 2 / 4;
+}
+
+.card-five {
+  grid-column: 4 / 6;
+}
+
+
+/* SECTION 3 ===================== */
+
+
+
 

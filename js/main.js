@@ -38,6 +38,26 @@ gsap.from("#movingBlock2", {
 })
 
 
+
+gsap.from("#path-stage", {
+
+
+    scrollTrigger: {
+      trigger: '#souvenirs',
+      start: 'top top',
+      end: 'bottom bottom',
+      scrub: 0.5,
+    },  
+    
+    
+    x: '100vw',
+    opacity: 0,
+    duration: 2,
+    stagger: 0.15,
+
+  });
+
+
 /** Block3 ========= */
 let tl = gsap.timeline({
     repeat: -1,
@@ -58,3 +78,4 @@ Draggable.create("#movingBlock4", {
     inertia:true
 
 })
+
