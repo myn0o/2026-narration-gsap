@@ -1,0 +1,47 @@
+/* Bases ================== */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Variables ================== */
+
+/* Typographie ================== */
+
+/* Design Page ================== */
+
+h1{
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: -0.105em;
+    font-weight: 700;
+    font-size: 240px;
+
+}
+
+p{
+    font-family: 'DM Mono', monospace;
+    letter-spacing: 0.14em;
+    font-size: 10px;
+
+}
+
+.typo2{
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: -0.05em;
+    font-weight: 500;
+    font-size: 16px;
+
+}
+
+
+#section1{
+display: flex;
+}
+
+.card1{
+display: flex;
+
+
+    
+}
+
