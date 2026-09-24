@@ -6,30 +6,30 @@
 
 /* Variables ================== */
 :root{
-    /* COLORS */
-    --c-text: #ffffff;
-    --paper: #f3efe7;
-    --ink: #ffffff;
-    --orange: #e65c3a;
-    --muted: #77786f;
-    --mono: 'DM Mono', monospace;
-    --sans: 'Manrope', sans-serif;
+  /* COLORS */
+  --c-text: #ffffff;
+  --paper: #f3efe7;
+  --ink: #ffffff;
+  --orange: #e65c3a;
+  --muted: #77786f;
+  --mono: 'DM Mono', monospace;
+  --sans: 'Manrope', sans-serif;
 
 }
 
 
 /* Typographie ================== */
 
-.hero_title{
-        transition: 0.5s;
-        filter: saturate(0%);
-        color: #ffdd00;
+.hero_title{  
+  transition: 0.5s;
+  filter: saturate(0%);
+  color: #ffdd00;
 
 }
 
 .hero_title:hover{
-    transform: scale(1.1);
-    filter: saturate(100%);
+  transform: scale(1.1);
+  filter: saturate(100%);
 }
 
 .hero-text2 {
@@ -38,8 +38,8 @@
   letter-spacing: 1.4px;
   text-transform: uppercase;
 
-    position: absolute;
-bottom: 85%;
+  position: absolute;
+  bottom: 85%;
   
 }
 
@@ -57,38 +57,33 @@ bottom: 85%;
 }
 
 .hero-text4{
-    font-family: 'Manrope', sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: -0.5px;
-
 
 }
 
 
 
 h1 {
-    font-family: 'Manrope', sans-serif;
-    letter-spacing: -0.105em;
-    font-weight: 700;
-    font-size: 265px;
-
+  font-family: 'Manrope', sans-serif;
+  letter-spacing: -0.105em;
+  font-weight: 700;
+  font-size: 265px;
 }
 
 
 
 h2 {
-    font-family: 'Manrope', sans-serif;
-    letter-spacing: -0.08em;
-    font-weight: 700;
-    font-size: 30px;
+  font-family: 'Manrope', sans-serif;
+  letter-spacing: -0.08em;
+  font-weight: 700;
+  font-size: 30px;
 
-    color: #ffffff;
+  color: #ffffff;
 
 }
-
-
-
 
 
 
@@ -97,26 +92,26 @@ h2 {
 
 /* HEADER ========= */
 body{
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 header{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-    position: fixed;
-    gap: 1000px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  gap: 1000px;
     
-    background-color: #ffffffdd;
-    width: 100%;
-    box-shadow: -4px -2px 30px #000000c1;
-    z-index: 9999;
+  background-color: #ffffffdd;
+  width: 100%;
+  box-shadow: -4px -2px 30px #000000c1;
+  z-index: 9999;
    
 }
 
 .header{
-      font-family: 'DM Mono', monospace;
+  font-family: 'DM Mono', monospace;
   font-size: 14px;
   letter-spacing: 1.4px;
   text-transform: uppercase;
@@ -154,18 +149,18 @@ header{
 
 .minicard {
   display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 90px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 90px;
 
 
-      font-family: 'DM Mono', monospace;
+  font-family: 'DM Mono', monospace;
   font-size: 10px;
   letter-spacing: 1.4px;
   text-transform: uppercase;
 
 
-    color: var(--c-text);
+  color: var(--c-text);
 
 }
 
@@ -182,17 +177,8 @@ header{
 
   padding-bottom: 200px;
 
-
-
   color: var(--c-text);
 }
-
-
-
-
-
-
-
 
 
 /* SECTION 2 ===================== */
@@ -200,56 +186,50 @@ header{
 #section2{
   min-height: 100vh;
 
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   
 }
 
 .souvenirs {
   min-height: 200vh;
 
-
   background: #222722;
   color: #f3efe7;
-
-  
-
   
 }
 
 .card {
-
-
- height: 100vh;
-
+  height: 100vh;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-
   gap: 12px;
   width: 100%;
 }
+
 
 .card_text {
   width: 100%;
   text-align: center;
 }
 
+
 .card_text h2 {
   margin: 0 0 12px;
   font-size: 48px;
 }
 
+
 .card_text p {
   margin: 0;
   color: #c2c3bc;
 }
+
 
 .card_image1 {
   display: flex;
@@ -257,6 +237,7 @@ header{
   gap: 16px;
   width: 100%;
 }
+
 
 .travel-card {
   width: 360px;
@@ -290,15 +271,11 @@ header{
 
 .puzzle-reset {
   display: flex;
-  
-
 
   border: 1px solid var(--ink);
   border-radius: 30px;
 
-
   padding: 10px 16px;
-
 
   background: transparent;
   color: var(--c-text);
@@ -310,21 +287,22 @@ header{
   transition: background-color .2s, color .2s;
 }
 
+
 .puzzle-reset:hover {
   background: var(--ink);
       color:#000000c1;
 
 }
 
+
+
 .puzzle {
   width: 60%;
   aspect-ratio: 16/9;
 
-
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-template-rows: repeat(3, minmax(0, 1fr));
-
 
   gap: 15px;
   padding: 15px;
@@ -334,6 +312,7 @@ header{
   border: 3px solid #ffffff;
 
 }
+
 
 .puzzle-piece {
 
@@ -345,7 +324,6 @@ header{
 
   border: 1px solid #f3efe7;
 
-
   object-fit: cover;
 
   padding: 0;
@@ -354,6 +332,7 @@ header{
   transition: filter .15s, box-shadow .15s;
 
 }
+
 
 .puzzle-piece:active,
 .puzzle-piece.dragging {
