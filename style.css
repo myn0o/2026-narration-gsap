@@ -8,13 +8,90 @@
 :root{
     /* COLORS */
     --c-text: #ffffff;
-
-    --c-shadow: -4px -2px 30px rgb(113, 123, 143);
+    --paper: #f3efe7;
+    --ink: #ffffff;
+    --orange: #e65c3a;
+    --muted: #77786f;
+    --mono: 'DM Mono', monospace;
+    --sans: 'Manrope', sans-serif;
 
 }
 
 
 /* Typographie ================== */
+
+.hero_title{
+        transition: 0.5s;
+        filter: saturate(0%);
+        color: #ffdd00;
+
+}
+
+.hero_title:hover{
+    transform: scale(1.1);
+    filter: saturate(100%);
+}
+
+.hero-text2 {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+
+    position: absolute;
+bottom: 85%;
+  
+}
+
+.hero-text3 {
+  width: 350px;
+
+  position: absolute;
+  right: 15%;
+  bottom: 2%;
+
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+.hero-text4{
+    font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+
+
+}
+
+
+
+h1 {
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: -0.105em;
+    font-weight: 700;
+    font-size: 265px;
+
+}
+
+
+
+h2 {
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: -0.08em;
+    font-weight: 700;
+    font-size: 30px;
+
+    color: #ffffff;
+
+}
+
+
+
+
+
+
 
 /* Design Page ================== */
 
@@ -111,218 +188,180 @@ header{
 }
 
 
-.hero_title{
-        transition: 0.5s;
-        filter: saturate(0%);
-        color: #ffdd00;
-
-}
-
-.hero_title:hover{
-    transform: scale(1.1);
-    filter: saturate(100%);
-}
-
-.hero-text2 {
-  font-family: 'DM Mono', monospace;
-  font-size: 10px;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-
-    position: absolute;
-bottom: 85%;
-  
-}
 
 
-h1 {
-    font-family: 'Manrope', sans-serif;
-    letter-spacing: -0.105em;
-    font-weight: 700;
-    font-size: 265px;
-
-}
 
 
-.hero-text3 {
-  position: absolute;
-  right: 25%;
-  bottom: 2%;
-  font-family: 'Manrope', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-}
+
 
 
 /* SECTION 2 ===================== */
 
 #section2{
-      min-height: 100vh;
-  min-height: 100svh;
-
+  min-height: 100vh;
 
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-
-}
-
-h2 {
-    font-family: 'Manrope', sans-serif;
-    letter-spacing: -0.105em;
-    font-weight: 700;
-    font-size: 30px;
-
+  
 }
 
 .souvenirs {
-  height: 200vh;
-  background-color: #222722;
+  min-height: 200vh;
+
+
+  background: #222722;
+  color: #f3efe7;
+
+  
+
+  
 }
 
-.journey-sticky {
-  position: sticky;
-  top: 0;
-  height: 100svh;
-  min-height: 600px;
-  overflow: hidden;
+.card {
+
+
+ height: 100vh;
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+  gap: 12px;
+  width: 100%;
+}
+
+.card_text {
+  width: 100%;
+  text-align: center;
+}
+
+.card_text h2 {
+  margin: 0 0 12px;
+  font-size: 48px;
+}
+
+.card_text p {
+  margin: 0;
+  color: #c2c3bc;
+}
+
+.card_image1 {
   display: flex;
   justify-content: center;
-}
-
-.journey-copy {
-  position: absolute;
-  z-index: 2;
-  top: 7vh;
-  text-align: center;
- 
-
-}
-
-
-
-.image-grid {
-  position: relative;
-  height: 100%;
-  padding: 6vh 6vw;
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  grid-template-rows: repeat(2, auto);
-  align-content: center;
-  align-items: center;
-  gap: 5vh 1.5vw;
-}
-
-.path-stage {
-  position: relative;
-  height: 100%;
-  padding: 6vh 6vw;
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  grid-template-rows: repeat(2, auto);
-  align-content: center;
-  align-items: center;
-  gap: 5vh 1.5vw;
-}
-
-.route {
-  position: absolute;
-  inset: 0;
+  gap: 16px;
   width: 100%;
-  height: 100%;
-  overflow: visible;
-  z-index: 0;
-}
-
-.route path {
-  fill: none;
-  stroke: #f3efe733;
-  stroke-width: 1.1;
-  stroke-dasharray: 3 9;
 }
 
 .travel-card {
-  display: block;
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16/9;
+  width: 360px;
+  height: 220px;
   object-fit: cover;
-  filter: saturate(.84);
-  will-change: transform;
-  z-index: 1;
+  border-radius: 8px;
 }
-
-.card-one {
-  grid-column: 1 / 3;
-}
-
-.card-two {
-  grid-column: 3 / 5;
-}
-
-.card-three {
-  grid-column: 5 / 7;
-}
-
-.card-four {
-  grid-column: 2 / 4;
-}
-
-.card-five {
-  grid-column: 4 / 6;
-}
-
 
 /* SECTION 3 ===================== */
-#section3{
-          min-height: 100vh;
+.puzzle-section {
+  position: relative;
   min-height: 100svh;
 
+  gap: 35px;
+
+  
+  display: grid;
+  place-items: center;
+  align-content: center;
 
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-
+  background-color: #222722;
 }
 
-.puzzle-section {
-  min-height: 100svh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.puzzle-copy {
+  width: 100%;
+  text-align: center;
+}
 
+
+
+.puzzle-reset {
+  display: flex;
+  
+
+
+  border: 1px solid var(--ink);
+  border-radius: 30px;
+
+
+  padding: 10px 16px;
+
+
+  background: transparent;
+  color: var(--c-text);
+  font: 10px var(--mono);
+
+
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color .2s, color .2s;
+}
+
+.puzzle-reset:hover {
+  background: var(--ink);
+      color:#000000c1;
 
 }
 
 .puzzle {
-  width: 20%;
- 
-
- 
-  padding: 13px;
-
-  background-color: #745252c1;
+  width: 60%;
+  aspect-ratio: 16/9;
 
 
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(3, minmax(0, 1fr));
 
+
+  gap: 15px;
+  padding: 15px;
+
+
+  background: #ffffff31;
+  border: 3px solid #ffffff;
 
 }
 
 .puzzle-piece {
+
+  display: block;
+  position: relative;
   z-index: 1;
   width: 100%;
+  height: 100%;
 
-  
+  border: 1px solid #f3efe7;
+
+
+  object-fit: cover;
+
+  padding: 0;
+  cursor: grab;
+
+  transition: filter .15s, box-shadow .15s;
 
 }
 
+.puzzle-piece:active,
+.puzzle-piece.dragging {
+  cursor: grabbing;
+}
 
-
-
-
-
+.puzzle-piece.dragging {
+  z-index: 5;
+  filter: brightness(1.12);
+  box-shadow: 0 8px 22px #20231f55;
+}
