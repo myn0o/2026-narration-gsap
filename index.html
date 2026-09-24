@@ -11,30 +11,74 @@
 </head>
 <body>
 
+    <!-- header ================= -->
+    <header>
+        <p class="header"> V/LOGS </p>
+        <p class="header">nice</p>
+     </header>
+
+
     <!-- Section 1 =================== -->
-    <section class="hero">
+    <section id="section1">
+        <!-- https://developer.mozilla.org/fr/docs/Web/HTML/Reference/Elements/video == -->
+        <video autoplay muted loop playsinline id="backgroundvideo" src="assets/vidéo/oui.mov">
+          <source src="assets/vidéo/oui.mov" type="video">
+        </video>
+
+          <div class="minicard">
+          <p>UNE COLLECTION DE MOMENTS</p>
+          <p >48°51′N — 2°21′E</p>
+        </div>
+
       <div class="hero-title-wrap">
-        <p class="hero-kicker">petites histoires, grands détours</p>
-        <h1 id="hero-title">vlog.</h1>
-        <p class="hero-note">Des jours ordinaires, mais pas trop au final...</p>
+        <p class="hero-text2">petites histoires, grands détours</p>
+        <h1 class="hero_title">vlog.</h1>
+        <p class="hero-text3">Des jours ordinaires, mais pas trop au final...</p>
     </div>
     </section>
 
     <!-- Section 2 =================== -->
-      <section id="souvenirs" class="journey">
+      <section id="section2" class="souvenirs">
         <div class="journey-sticky">
+               <div class="journey-copy">
+            <h2>Des images<br>qui voyagent.</h2>
+            <p>Un scroll, et les souvenirs reprennent leur route.</p>
+          </div>
           <div class="image-grid" >
-            <img  id="path-stage" class="travel-card card-one" src="assets/img/france.webp" alt="Un souvenir de France">
-            <img id="path-stage" class="travel-card card-two" src="assets/img/espagne.jpg" alt="Un souvenir d'Espagne">
-            <img id="path-stage" class="travel-card card-three" src="assets/img/college.webp" alt="Un souvenir du collège">
-            <img id="path-stage" class="travel-card card-four" src="assets/img/night.jpg" alt="Un souvenir de nuit">
-            <img id="path-stage" class="travel-card card-five" src="assets/img/end.webp" alt="Un paysage sous la neige">
+            <img class="travel-card card-one" src="assets/img/france.webp" alt="Un souvenir de France">
+            <img class="travel-card card-two" src="assets/img/espagne.jpg" alt="Un souvenir d'Espagne">
+            <img class="travel-card card-three" src="assets/img/college.webp" alt="Un souvenir du collège">
+            <img class="travel-card card-four" src="assets/img/night.jpg" alt="Un souvenir de nuit">
+            <img class="travel-card card-five" src="assets/img/end.webp" alt="Un paysage sous la neige">
           </div>
 
         </div>
       </section>
 
     <!-- Section 3 =================== -->
+      <section id="section3" class="puzzle-section" >
+        <div class="puzzle">
+          <img class="puzzle-piece" src="assets/img/alwayssnowing_1.png" alt="Pièce 1" data-piece="0">
+          <img class="puzzle-piece" src="assets/img/alwayssnowing_2.png" alt="Pièce 2" data-piece="1">
+          <img class="puzzle-piece" src="assets/img/alwayssnowing_3.png" alt="Pièce 3" data-piece="2">
+        </div>
+            <div class="puzzle" >
+          <img class="puzzle-piece" src="assets/img/alwayssnowing_4.png" alt="Pièce 4" data-piece="3" >
+          <img class="puzzle-piece" src="assets/img/alwayssnowing_5.png" alt="Pièce 5" data-piece="4" >
+          <img class="puzzle-piece" src="assets/img/alwayssnowing_6.png" alt="Pièce 6" data-piece="5" >
+            </div>
+            <div class="puzzle">
+
+          <img class="puzzle-piece" src="assets/img/alwayssnowing_7.png" alt="Pièce 7" data-piece="6" >
+          <img class="puzzle-piece" src="assets/img/alwayssnowing_8.png" alt="Pièce 8" data-piece="7" >
+          <img class="puzzle-piece" src="assets/img/alwayssnowing_9.png" alt="Pièce 9" data-piece="8" >
+            </div>
+
+      </section>
+
+    
+
+
 
     <!-- Section 4 =================== -->
     <section id="section4" class="h100" class="light">
@@ -58,6 +102,7 @@
     <script src="js/GSAP/ScrollToPlugin.min.js"></script>
     <script src="js/GSAP/ScrollTrigger.min.js"></script>
     <script src="js/GSAP/InertiaPlugin.min.js"></script>
+    <script src="js/GSAP/SplitText.min.js"></script>
 
     <!-- Main ====== -->
    <script src="js/main.js"></script> 

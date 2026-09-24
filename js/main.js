@@ -1,5 +1,5 @@
 /** Import=================== */
-gsap.registerPlugin(ScrollTrigger,Observer,ScrollToPlugin,Draggable,MotionPathPlugin,InertiaPlugin);
+gsap.registerPlugin(ScrollTrigger,Observer,ScrollToPlugin,Draggable,MotionPathPlugin,InertiaPlugin,SplitText);
 
 /** Variables ===================  */
 
@@ -21,6 +21,33 @@ gsap.fromTo("#movingBlock1", {
 })
 
 
+/** https://gsap.com/docs/v3/Plugins/SplitText/ ==========  */
+  SplitText.create('.hero-title-wrap', {
+    type: 'lines',
+    autoSplit: true,
+    onSplit(split) {
+      return gsap.from(split.lines, {
+        rotationX: -56,
+            transformOrigin: "50% 50% -160px",
+
+        opacity: 0,
+        duration: 1.3,
+        stagger: 0.25,
+      });
+    },
+  });
+
+
+let tl = gsap.timeline()
+
+tl.to(".hero-meta", {
+    y: '-15',
+    
+
+})
+
+
+
 /** Block2 ========= */
 gsap.from("#movingBlock2", {
 
@@ -39,17 +66,15 @@ gsap.from("#movingBlock2", {
 
 
 
-gsap.from("#path-stage", {
-
+gsap.from(".travel-card", {
 
     scrollTrigger: {
-      trigger: '#souvenirs',
+      trigger: '#section2',
       start: 'top top',
       end: 'bottom bottom',
+      //markers: true,
       scrub: 0.5,
     },  
-    
-    
     x: '100vw',
     opacity: 0,
     duration: 2,
@@ -59,7 +84,7 @@ gsap.from("#path-stage", {
 
 
 /** Block3 ========= */
-let tl = gsap.timeline({
+/*let tl = gsap.timeline({
     repeat: -1,
     yoyo:true,
 })
@@ -67,7 +92,13 @@ let tl = gsap.timeline({
 tl.to("#movingBlock3", {x: '100', rotation: 90,})
 .to("#movingBlock3", {y: '100',})
 .to("#movingBlock3", {x: '-100',})
-.to("#movingBlock3", {y: '-100', rotation: 0})
+.to("#movingBlock3", {y: '-100', rotation: 0}) */
+
+
+Draggable.create(".puzzle-piece", {
+        bounds: "#section3",
+
+})
 
 /** Block4 ========= */
 
